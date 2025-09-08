@@ -1,0 +1,9 @@
+RequirementID,Status,Evidence,Gaps
+O1-Availability,Partial,"qa/logs/demo-availability.txt (run attempt); qa/logs/demo-availability-jar.txt (java -jar attempt); qa/logs/build.txt (build success)","Runnable CLI exists, but local run needs Spark; DQ table writes not observed in logs"
+O2-Freshness,Unknown,"No separate CLI run observed; build/logs available in qa/logs/build.txt","EntryPoint supports overall modes; explicit freshness run/logs not captured"
+O3-NullRatio,No,"No run logs; no CLI for null ratio behavior observed","Null ratio metadata job/CLI not found; no persisted ratio evidence"
+O4-RowCountDoD,Partial,"qa/logs/build.txt (build success)","DoD logic likely present but no runnable CLI evidence or DQ writes captured"
+O5-Average,No,"No run logs; build only","Average check not runnable/observed; potential perf caveat unverified"
+DQ-Storage,Partial,"qa/logs/build.txt (build success); src/main/resources/sql (DDL files) — noted conceptually","DQ tables in doc (partition_status, partition_stats, partition_info, alerts) not fully present; current DDLs differ"
+NF-Java8+Spark3.3,Yes,"qa/logs/java_version.txt (Java 8); qa/logs/build.txt (Spark 3.3 deps resolved)","Fat-jar requires spark-submit or Spark classpath for local run"
+NF-CheapFirst,Partial,"qa/logs/build.txt (build only)","Availability/freshness via metadata assumed; null ratio/average methods not runnable to confirm"

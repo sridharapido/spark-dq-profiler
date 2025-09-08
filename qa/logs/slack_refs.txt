@@ -1,0 +1,4 @@
+src/main/scala/bike/rapido/dq/sinks/WebhookNotifier.scala:8:class WebhookNotifier(webhookUrl: String) {
+src/main/scala/bike/rapido/dq/EntryPoint.scala:5:import bike.rapido.dq.sinks.{IcebergSink, JsonFileSink, StdoutSink, WebhookNotifier}
+src/main/scala/bike/rapido/dq/EntryPoint.scala:91:            if (args.write && severe) args.slackWebhook.foreach(url => new WebhookNotifier(url).notify(s"High severity rules failed: ${args.tables.mkString(",")}"))
+src/main/scala/bike/rapido/dq/EntryPoint.scala:104:            if (args.write && severe) args.slackWebhook.foreach(url => new WebhookNotifier(url).notify(s"High PSI drift detected: ${args.tables.mkString(",")}"))

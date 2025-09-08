@@ -1,0 +1,42 @@
+slack:
+  enabled: true
+  level: basic
+  token: ${SLACK_TOKEN}
+  channel: "#dq-alerts"
+  mention:
+    critical: "@oncall-dp"
+    warn: ""
+
+rules:
+  default:
+    availability:
+      enabled: true
+      severity: critical
+    freshness:
+      enabled: true
+      stale_hours: 24
+      severity: warn
+    drift:
+      enabled: true
+      threshold: 0.30
+      severity: warn
+    null_ratio:
+      enabled: true
+      threshold: 0.20
+      severity: warn
+    row_count_dod:
+      enabled: true
+      threshold: 0.20
+      severity: warn
+    average_change:
+      enabled: true
+      threshold: 0.20
+      severity: warn
+
+  overrides:
+    "db.sales.orders":
+      drift:
+        threshold: 0.10
+        severity: critical
+      null_ratio:
+        enabled: false

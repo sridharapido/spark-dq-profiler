@@ -1,0 +1,7 @@
+src/main/scala/bike/rapido/dq/sinks/IcebergSink.scala:31:    try df.write.mode("append").saveAsTable(metricsTable) catch { case _: Throwable => () }
+src/main/scala/bike/rapido/dq/sinks/IcebergSink.scala:35:    try df.write.mode("append").saveAsTable(rulesTable) catch { case _: Throwable => () }
+src/main/scala/bike/rapido/dq/sinks/IcebergSink.scala:39:    try df.write.mode("append").saveAsTable(driftTable) catch { case _: Throwable => () }
+src/main/scala/bike/rapido/dq/drift/ReferenceBins.scala:22:  def saveCuts(spark: SparkSession, table: String, column: String, partitionValue: String, cuts: Array[Double]): Unit = { ensureTable(spark); try { import spark.implicits._; val now = Timestamp.from(Instant.now()); Seq((table, column, partitionValue, cuts.toSeq.map(_.toDouble), now)).toDF("table_name", "column_name", "partition_value", "cuts", "created_at").write.mode("append").saveAsTable(TableName) } catch { case _: Throwable => () } }
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:19:    dfOnly.foreach{ f => spark.sql(s"ALTER TABLE $fqn ADD COLUMN IF NOT EXISTS `${f.name}` ${f.dataType.sql}") }
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:29:        outDf.write.mode("errorIfExists").saveAsTable(fqn)
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:37:        if (opts.overwritePartitions) spark.sql(s"INSERT OVERWRITE TABLE ${fqn} ${sqlBody}") else spark.sql(s"INSERT INTO ${fqn} ${sqlBody}")

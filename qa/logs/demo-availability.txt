@@ -1,0 +1,2 @@
+Shaded jar not found. Run: mvn -q -DskipTests package
+run-local.sh failed (see above)

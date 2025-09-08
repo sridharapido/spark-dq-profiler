@@ -1,0 +1,13 @@
+src/main/scala/com/yourorg/telemetry/Metadog.scala:14:object NoopMetricSink extends MetricSink {
+src/main/scala/com/yourorg/telemetry/Metadog.scala:20:object Metadog {
+src/main/scala/com/yourorg/telemetry/Metadog.scala:22:  @volatile private var sink: MetricSink = NoopMetricSink
+src/main/scala/com/yourorg/telemetry/Metadog.scala:28:      val fqn = sys.props.getOrElse("metadog.fqn", "com.yourorg.metadog.spark.MetadogClient")
+src/main/scala/com/yourorg/telemetry/Metadog.scala:48:    if (!loaded) log.info("Metadog not found; using NOOP sink.")
+src/main/scala/com/yourorg/telemetry/Metadog.scala:56:  def isNoop: Boolean = sink eq NoopMetricSink
+src/main/scala/bike/rapido/dq/EntryPoint.scala:7:import com.yourorg.telemetry.Metadog
+src/main/scala/bike/rapido/dq/EntryPoint.scala:49:          Metadog.init(spark, appName = "spark-dq-profiler", env = sys.props.getOrElse("env","dev"))
+src/main/scala/bike/rapido/dq/EntryPoint.scala:50:          if (Metadog.isNoop) log.info("Metadog initialized: NOOP") else log.info("Metadog initialized: ACTIVE")
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:5:import com.yourorg.telemetry.Metadog
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:40:      Metadog.counter("io.write.success", 1, Map("table"->fqn))
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:41:    } catch { case e: Throwable => Metadog.counter("io.write.failure", 1, Map("table"->fqn,"error"->e.getClass.getSimpleName)); throw e }
+src/main/scala/com/yourorg/iceberg/IcebergWriter.scala:42:    finally { val ms = (System.nanoTime - t0) / 1e6d; Metadog.timer("io.write.ms", ms.toLong, Map("table"->fqn)) }

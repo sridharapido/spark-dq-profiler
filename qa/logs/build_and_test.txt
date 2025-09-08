@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< bike.rapido:spark-dq-profiler >--------------------
+[INFO] Building spark-dq-profiler 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ spark-dq-profiler ---
+[INFO] Deleting /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ spark-dq-profiler ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ spark-dq-profiler ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- scala:4.9.0:compile (scala-compile) @ spark-dq-profiler ---
+[WARNING]  Expected all dependencies to require Scala version: 2.12.17
+[WARNING]  org.apache.spark:spark-core_2.12:3.3.4 requires scala version: 2.12.15
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] Compiler bridge file: /Users/e2361/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.12-1.9.5-bin_2.12.17__55.0-1.9.5_20230915T135648.jar
+[INFO] compiling 14 Scala sources to /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/target/classes ...
+[INFO] done compiling
+[INFO] compile in 4.1 s
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ spark-dq-profiler ---
+[INFO] skip non existing resourceDirectory /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ spark-dq-profiler ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- scala:4.9.0:testCompile (scala-compile) @ spark-dq-profiler ---
+[WARNING]  Expected all dependencies to require Scala version: 2.12.17
+[WARNING]  org.apache.spark:spark-core_2.12:3.3.4 requires scala version: 2.12.15
+[WARNING] Multiple versions of scala libraries detected!
+[WARNING] Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+[INFO] Compiler bridge file: /Users/e2361/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.12-1.9.5-bin_2.12.17__55.0-1.9.5_20230915T135648.jar
+[INFO] compiling 1 Scala source to /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/target/test-classes ...
+[INFO] done compiling
+[INFO] compile in 1.8 s
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ spark-dq-profiler ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ spark-dq-profiler ---
+[INFO] Building jar: /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/target/spark-dq-profiler-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.5.0:shade (default) @ spark-dq-profiler ---
+[INFO] Including commons-codec:commons-codec:jar:1.15 in the shaded jar.
+[INFO] Including org.scala-lang:scala-library:jar:2.12.15 in the shaded jar.
+[INFO] Including com.typesafe:config:jar:1.4.3 in the shaded jar.
+[INFO] Including com.github.scopt:scopt_2.12:jar:4.1.0 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpclient:jar:4.5.14 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpcore:jar:4.4.16 in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.2 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.36 in the shaded jar.
+[INFO] Dependency-reduced POM written at: /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/dependency-reduced-pom.xml
+[WARNING] commons-codec-1.15.jar, commons-logging-1.2.jar, config-1.4.3.jar, httpclient-4.5.14.jar, httpcore-4.4.16.jar, scala-library-2.12.15.jar, scopt_2.12-4.1.0.jar, slf4j-api-1.7.36.jar, spark-dq-profiler-0.1.0-SNAPSHOT.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] httpclient-4.5.14.jar, httpcore-4.4.16.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/DEPENDENCIES
+[WARNING]   - META-INF/NOTICE
+[WARNING] commons-codec-1.15.jar, commons-logging-1.2.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/NOTICE.txt
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.613 s
+[INFO] Finished at: 2025-09-08T13:35:40+05:30
+[INFO] ------------------------------------------------------------------------

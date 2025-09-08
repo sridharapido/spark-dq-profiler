@@ -1,0 +1,5 @@
+Apache Maven 3.9.10 (5f519b97e944483d878815739f519b2eade0a91d)
+Maven home: /opt/homebrew/Cellar/maven/3.9.10/libexec
+Java version: 11.0.28, vendor: Azul Systems, Inc., runtime: /Users/e2361/.sdkman/candidates/java/11.0.28-zulu/zulu-11.jdk/Contents/Home
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "mac os x", version: "15.5", arch: "aarch64", family: "mac"

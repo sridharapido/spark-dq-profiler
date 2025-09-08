@@ -1,0 +1,8 @@
+8:  <artifactId>spark-dq-profiler</artifactId>
+11:  <name>spark-dq-profiler</name>
+186:        <artifactId>maven-shade-plugin</artifactId>
+192:              <goal>shade</goal>
+195:              <shadedArtifactAttached>true</shadedArtifactAttached>
+197:                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+198:                <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
+199:                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">

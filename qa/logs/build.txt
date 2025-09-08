@@ -1,0 +1,96 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< bike.rapido:spark-dq-profiler >--------------------
+[INFO] Building spark-dq-profiler 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ spark-dq-profiler ---
+[INFO] Deleting /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ spark-dq-profiler ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ spark-dq-profiler ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- scala:4.9.0:compile (scala-compile) @ spark-dq-profiler ---
+[WARNING]  Expected all dependencies to require Scala version: 2.12.17
+[WARNING]  org.apache.spark:spark-core_2.12:3.3.4 requires scala version: 2.12.15
+[WARNING] Multiple versions of scala libraries detected!
+[INFO] Compiler bridge file: /Users/e2361/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.12-1.9.5-bin_2.12.17__55.0-1.9.5_20230915T135648.jar
+[INFO] compiling 14 Scala sources to /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/target/classes ...
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:26: not found: value OParser
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:29: not found: value OParser
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:30: not found: value programName
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:30: not found: value head
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:31: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:32: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:33: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:34: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:35: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:36: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:36: not found: value success
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:36: not found: value failure
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:37: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:38: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:39: not found: value opt
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:40: not found: value help
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:44: not found: value OParser
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:46: value demo is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/Metadog.scala:23: not found: type SparkSession
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:52: value catalog is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:53: value schema is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:54: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:54: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:55: value partitionKey is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:56: value partitions is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:56: value partitions is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:57: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:58: value write is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:59: value slackWebhook is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:60: value demo is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:66: value demo is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:67: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:70: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:70: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:71: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:72: value partitionKey is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:72: value partitions is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:84: value write is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:90: value write is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:90: value slackWebhook is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:90: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:93: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:93: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:95: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:95: value partitionKey is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:95: value partitions is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:97: value write is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:103: value write is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:103: value slackWebhook is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:103: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:106: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:106: value mode is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:107: value tables is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:108: value partitionKey is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:108: value partitions is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:109: value foreach is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/EntryPoint.scala:110: value foreach is not a member of Any
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/Metadog.scala:19: not found: value LoggerFactory
+[ERROR] /Users/e2361/Development/roppenlabs/dq-profiler/spark-dq-profiler/src/main/scala/bike/rapido/dq/Metadog.scala:31: not found: type SparkSession
+[ERROR] 59 errors found
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.664 s
+[INFO] Finished at: 2025-09-08T15:26:07+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal net.alchim31.maven:scala-maven-plugin:4.9.0:compile (scala-compile) on project spark-dq-profiler: Execution scala-compile of goal net.alchim31.maven:scala-maven-plugin:4.9.0:compile failed: Compilation failed: InterfaceCompileFailed -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

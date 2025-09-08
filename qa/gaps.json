@@ -1,0 +1,8 @@
+[
+  {"id":"G1","requirementId":"O1-Availability","title":"Local run blocked by missing Spark runtime","severity":"P1","suggestedFix":"Document spark-submit requirement in README/demo logs; include a dev profile to assemble Spark classpath locally.","owner":"TBD"},
+  {"id":"G2","requirementId":"O2-Freshness","title":"No observable freshness run/evidence","severity":"P1","suggestedFix":"Add a CLI subcommand or mode that prints latest partition and expected date; capture logs in demo.","owner":"TBD"},
+  {"id":"G3","requirementId":"O3-NullRatio","title":"Null ratio job not runnable/observed","severity":"P0","suggestedFix":"Add a CLI path using metadata (null_count/record_count) to compute and persist ratios; include demo run and logs.","owner":"TBD"},
+  {"id":"G4","requirementId":"O4-RowCountDoD","title":"No persisted DoD alerts observed","severity":"P1","suggestedFix":"Add a CLI path to persist DoD OK/alerts to DQ store and print human-readable detail; capture demo logs.","owner":"TBD"},
+  {"id":"G5","requirementId":"O5-Average","title":"Average check not implemented/runnable","severity":"P0","suggestedFix":"Implement a lightweight average check (metadata/sampling); persist info/alerts; document perf caveat.","owner":"TBD"},
+  {"id":"G6","requirementId":"DQ-Storage","title":"DQ storage schema mismatch","severity":"P1","suggestedFix":"Provide canonical DDLs for partition_status, partition_stats, partition_info, alerts; ensure idempotent create-if-not-exists and consistent usage.","owner":"TBD"}
+]

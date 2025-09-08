@@ -1,0 +1,16 @@
+15:    <scala.binary.version>2.12</scala.binary.version>
+16:    <spark.version>3.3.4</spark.version>
+19:    <maven.compiler.source>1.8</maven.compiler.source>
+20:    <maven.compiler.target>1.8</maven.compiler.target>
+36:        <artifactId>spark-core_${scala.binary.version}</artifactId>
+37:        <version>${spark.version}</version>
+42:        <artifactId>spark-sql_${scala.binary.version}</artifactId>
+43:        <version>${spark.version}</version>
+48:        <artifactId>iceberg-spark-runtime-3.3_${scala.binary.version}</artifactId>
+63:        <artifactId>spark-testing-base_${scala.binary.version}</artifactId>
+83:      <artifactId>spark-core_${scala.binary.version}</artifactId>
+88:      <artifactId>spark-sql_${scala.binary.version}</artifactId>
+93:      <artifactId>iceberg-spark-runtime-3.3_${scala.binary.version}</artifactId>
+120:      <artifactId>spark-testing-base_${scala.binary.version}</artifactId>
+134:          <source>${maven.compiler.source}</source>
+135:          <target>${maven.compiler.target}</target>

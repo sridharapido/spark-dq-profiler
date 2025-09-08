@@ -1,0 +1,8 @@
+13:  final case class CliArgs(
+32:        opt[String]("catalog").optional().action((x, c) => c.copy(catalog = Option(x))),
+33:        opt[String]("schema").optional().action((x, c) => c.copy(schema = Option(x))),
+34:        opt[String]("tables").optional().action((x, c) => c.copy(tables = x.split(',').map(_.trim).filter(_.nonEmpty).toList)),
+35:        opt[String]("partition-key").optional().action((x, c) => c.copy(partitionKey = Option(x))),
+36:        opt[String]("partitions").optional().action((x, c) => c.copy(partitions = x.split(',').map(_.trim).toList)),
+37:        opt[String]("mode").optional().validate { case "availability" | "rules" | "drift" | "all" => success; case other => failure(s"Invalid mode: $other") }.action((x, c) => c.copy(mode = x)),
+39:        opt[String]("slack-webhook").optional().action((x, c) => c.copy(slackWebhook = Option(x))),

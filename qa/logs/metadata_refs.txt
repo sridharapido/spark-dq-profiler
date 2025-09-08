@@ -1,0 +1,6 @@
+src/main/scala/bike/rapido/dq/metadata/MetadataProfiler.scala:17:          val mpCount = MetricPoint(tableFqn, Some(p), LocalDate.now(), "partition_row_count", count.toDouble, Map("partitionKey" -> pk))
+src/main/scala/bike/rapido/dq/metadata/MetadataProfiler.scala:40:  def rowCountDoDWoW(spark: SparkSession, tableFqn: String, partitionKey: String): Seq[MetricPoint] = {
+src/main/scala/bike/rapido/dq/metadata/MetadataProfiler.scala:50:      val dod = d1.map(prev => MetricPoint(tableFqn, Some(part), date, "row_count_dod_delta", if (prev == 0.0) 0.0 else (rc - prev) / prev, Map("partitionKey" -> partitionKey)))
+src/main/scala/bike/rapido/dq/metadata/MetadataProfiler.scala:51:      val wow = d7.map(prev => MetricPoint(tableFqn, Some(part), date, "row_count_wow_delta", if (prev == 0.0) 0.0 else (rc - prev) / prev, Map("partitionKey" -> partitionKey)))
+src/main/scala/bike/rapido/dq/model.scala:36:    alertDoDDeltaPct: Double = 0.10
+src/main/scala/bike/rapido/dq/model.scala:57:      alertDoDDeltaPct = if (c.hasPath("alertDoDDeltaPct")) c.getDouble("alertDoDDeltaPct") else 0.10
